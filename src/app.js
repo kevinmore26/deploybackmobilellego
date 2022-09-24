@@ -16,17 +16,17 @@ mercadopago.configure({
 /*
 * IMPORTAR SOCKETS
 */
-const ordersSocket = require('./sockets/ordersSocket');
+const ordersSocket = require('../sockets/ordersSocket');
 
 /*
 * IMPORTAR RUTAS
 */
-const usersRoutes = require('./routes/userRoutes');
-const categoriesRoutes = require('./routes/categoryRoutes');
-const productRoutes = require('./routes/productRoutes');
-const addressRoutes = require('./routes/addressRoutes');
-const ordersRoutes = require('./routes/orderRoutes');
-const mercadoPagoRoutes = require('./routes/mercadoPagoRoutes');
+const usersRoutes = require('../routes/userRoutes');
+const categoriesRoutes = require('../routes/categoryRoutes');
+const productRoutes = require('../routes/productRoutes');
+const addressRoutes = require('../routes/addressRoutes');
+const ordersRoutes = require('../routes/orderRoutes');
+const mercadoPagoRoutes = require('../routes/mercadoPagoRoutes');
 
 
 const DB_PORT = process.env.DB_PORT || 4000
@@ -42,7 +42,7 @@ app.use(cors());
 app.use(passport.initialize());
 app.use(passport.session());
 
-require('./config/passport')(passport);
+require('../config/passport')(passport);
 
 app.disable('x-powered-by');
 
