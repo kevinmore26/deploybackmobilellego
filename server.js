@@ -46,7 +46,7 @@ require('./config/passport')(passport);
 
 app.disable('x-powered-by');
 
-app.set('port', 7225);
+app.set('DB_PORT', 7225);
 
 /*
 * LLAMADO A LOS SOCKETS
