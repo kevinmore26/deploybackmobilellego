@@ -46,7 +46,7 @@ require('../config/passport')(passport);
 
 app.disable('x-powered-by');
 
-app.set('DB_PORT', process.env.PORT || 5000 || 3306);
+app.set('DB_PORT', process.env.PORT || 5000 || 3306 || 6270, );
 
 /*
 * LLAMADO A LOS SOCKETS
@@ -68,8 +68,8 @@ ordersRoutes(app);
 mercadoPagoRoutes(app);
 
 
-server.listen(process.env.PORT || 5000 || 3306, function() {
-    console.log('Aplicacion de NodeJS ' + process.env.PORT || 5000 || 3306 + ' Iniciada...')
+server.listen(process.env.PORT || 5000 || 3306 || 6270,  function() {
+    console.log('Aplicacion de NodeJS ' + process.env.PORT || 5000  + ' Iniciada...')
 });
 
 
