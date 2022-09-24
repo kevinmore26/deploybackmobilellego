@@ -68,7 +68,7 @@ ordersRoutes(app);
 mercadoPagoRoutes(app);
 
 
-server.listen(DB_PORT, '192.168.0.7' || 'localhost', function() {
+server.listen(DB_PORT, function() {
     console.log('Aplicacion de NodeJS ' + DB_PORT + ' Iniciada...')
 });
 
