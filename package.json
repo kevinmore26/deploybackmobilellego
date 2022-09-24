@@ -2,9 +2,9 @@
   "name": "backenddeliveryudemymysql",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "app.js",
   "scripts": { 
-    "start": "node src/server.js"
+    "start": "node src/app.js"
   },
   "author": "kevinmore26",
   "license": "MIT",
