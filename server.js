@@ -27,6 +27,8 @@ const productRoutes = require('./routes/productRoutes');
 const addressRoutes = require('./routes/addressRoutes');
 const ordersRoutes = require('./routes/orderRoutes');
 const mercadoPagoRoutes = require('./routes/mercadoPagoRoutes');
+
+
 const DB_PORT = process.env.DB_PORT || 4000
  
 app.use(logger('dev'));
