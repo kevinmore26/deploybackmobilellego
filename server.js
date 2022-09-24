@@ -46,7 +46,7 @@ require('./config/passport')(passport);
 
 app.disable('x-powered-by');
 
-app.set('port', DB_PORT);
+app.set('port', 7225);
 
 /*
 * LLAMADO A LOS SOCKETS
@@ -68,8 +68,8 @@ ordersRoutes(app);
 mercadoPagoRoutes(app);
 
 
-server.listen(DB_PORT, function() {
-    console.log('Aplicacion de NodeJS ' + DB_PORT + ' Iniciada...')
+server.listen(7225, function() {
+    console.log('Aplicacion de NodeJS ' + 7225 + ' Iniciada...')
 });
 
 

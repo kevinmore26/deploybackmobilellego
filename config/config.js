@@ -1,15 +1,11 @@
-const mysql = require('mysql');
-const DB_HOST = process.env.DB_HOST || 'localhost';
-const DB_USER = process.env.DB_USER || 'root';
-const DB_PASSWORD = process.env.DB_PASSWORD || 'password';
-const DB_NAME = process.env.DB_NAME || 'llegoshopmobile' ;
+const mysql = require('mysql'); 
 
 
 const db = mysql.createConnection({
-    host: process.env.DB_HOST,
-    user: process.env.DB_USER,
-    password: process.env.DB_PASSWORD,
-    database: process.env.DB_NAME
+    host: "containers-us-west-52.railway.app",
+    user: "root",
+    password: "KGF8kfjntWX5pOfC6i6T",
+    database: "railway"
 });
 
 db.connect(function(err) {
