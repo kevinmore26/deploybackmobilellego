@@ -6,7 +6,7 @@ const db = mysql.createConnection({
     user: "root",
     password: "KGF8kfjntWX5pOfC6i6T",
     database: "railway",
-    port: process.env.PORT ,
+    port: process.env.PORT || 5000 ,
 });
 
 db.connect(function(err) {
